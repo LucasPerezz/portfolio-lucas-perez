@@ -1,0 +1,7 @@
+.list-container::-webkit-scrollbar {
+    height: 6px;
+}
+
+.list-container::-webkit-scrollbar-thumb {
+    background: rgb(52, 211, 153);
+}

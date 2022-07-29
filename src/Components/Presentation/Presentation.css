@@ -1,0 +1,20 @@
+.nameAnimate {
+    color: black;
+    display: block;
+    white-space: nowrap;
+    border-right: 4px solid;
+    width: 18ch;
+    animation: typing 2s steps(17),
+    blink 1s infinite step-end alternate;
+    overflow: hidden;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+@keyframes typing {
+    from { width: 0; }
+}
+
+@keyframes blink {
+    50% { border-color: transparent; }
+}
