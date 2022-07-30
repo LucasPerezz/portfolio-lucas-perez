@@ -9,20 +9,31 @@ export const useData = createContext([])
 const Data = ({children}) => {
 
     const [languageData, setLanguageData] = useState([])
+    const [proyectsData, setProyectsData] = useState([])
 
     const fetchDataLanguages = async () => {
-        const querySnapshot = await getDocs(collection(db, "languages"))
-        let languages = []
+        const querySnapshot = await getDocs(collection(db, "languages"));
+        let languages = [];
         querySnapshot.forEach((doc) => {
-            languages.push(doc.data())
+            languages.push(doc.data());
         })
 
-        console.log(languages)
-        setLanguageData(languages)
+        setLanguageData(languages);
+    }
+
+    const fetchDataProyects = async () => {
+        const querySnapshot = await getDocs(collection(db, "proyects"));
+        let proyects = [];
+        querySnapshot.forEach((doc) => {
+            proyects.push(doc.data())
+        })
+
+        setProyectsData(proyects)
     }
 
     useEffect(() => {
-        fetchDataLanguages()
+        fetchDataLanguages();
+        fetchDataProyects()
     }, [])
 
 
@@ -30,7 +41,9 @@ const Data = ({children}) => {
     <useData.Provider value={
         {
             languageData,
-            setLanguageData
+            setLanguageData,
+            proyectsData,
+            setProyectsData
         }
     }>
         {children}

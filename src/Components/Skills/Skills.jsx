@@ -10,7 +10,7 @@ const Skills = () => {
     <>
     <h2 className='text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl'>SKILLS</h2>
     <div className='w-4/5 h-max m-auto max-w-4xl overflow-x-scroll snap-proximity snap-center my-24 list-container'>
-        <div className='flex w-full gap-8 mb-7'>
+        <div className='flex w-full gap-12 mb-7'>
             {
                 languageData.map((language) => {
                     return (

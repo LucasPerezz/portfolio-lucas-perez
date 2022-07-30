@@ -1,0 +1,7 @@
+.proyect-container::-webkit-scrollbar {
+    height: 10px;
+}
+
+.proyect-container::-webkit-scrollbar-thumb {
+    background: rgb(52, 211, 153);
+}

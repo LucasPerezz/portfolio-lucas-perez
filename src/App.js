@@ -1,17 +1,22 @@
-import './App.css';
-import AboutMe from './Components/AboutMe/AboutMe';
-import Data from './Components/context/Data.js';
-import Presentation from './Components/Presentation/Presentation';
-import Skills from './Components/Skills/Skills';
+import "./App.css";
+
+import Data from "./Components/context/Data.js";
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ProyectDetailContainer from "./Components/ProyectDetailContainer/ProyectDetailContainer";
+import Home from "./view/Home";
 
 function App() {
   return (
     <>
-    <Data>
-      <Presentation />
-      <AboutMe />
-      <Skills />
-    </Data>
+      <Data>
+        <Router>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/:name" element={<ProyectDetailContainer />} />
+          </Routes>
+        </Router>
+      </Data>
     </>
   );
 }
