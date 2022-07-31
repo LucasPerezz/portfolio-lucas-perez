@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { useParams } from 'react-router-dom'
 import { useData } from '../context/Data'
+import Navbar from '../Navbar/Navbar'
 import ProyectDetail from '../ProyectDetail/ProyectDetail'
 
 const ProyectDetailContainer = () => {
@@ -18,6 +19,7 @@ const ProyectDetailContainer = () => {
                 return <ProyectDetail detail={item} />
             })
         }
+        <Navbar />
     </div>
   )
 }
