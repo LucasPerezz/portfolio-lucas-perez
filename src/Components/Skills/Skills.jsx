@@ -6,15 +6,15 @@ const Skills = () => {
   const { languageData } = useContext(useData);
 
   return (
-    <>
+    <div className="min-h-screen hover:scale-110 hover:duration-1000">
       <h2
-        className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24"
+        className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24 "
         id="skills"
       >
         SKILLS
       </h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 place-items-center mx-auto gap-12 min-h-screen mt-24">
+      <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 place-items-center mx-auto gap-12 mt-20 ">
         {languageData.map((language) => {
           return (
             <div className="w-max h-max p-2 hover:shadow-md rounded-xl">
@@ -27,7 +27,7 @@ const Skills = () => {
           );
         })}
       </div>
-    </>
+    </div>
   );
 };
 

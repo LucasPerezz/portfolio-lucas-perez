@@ -3,7 +3,7 @@ import ME from "../../assets/aboutMe.png";
 
 const AboutMe = () => {
   return (
-    <div className="w-3/4 max-w-6xl mx-auto min-h-screen py-24" id="aboutMe">
+    <div className="w-3/4 max-w-6xl mx-auto min-h-screen py-24 hover:scale-110 hover:duration-1000" id="aboutMe">
       <h2 className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24">
         SOBRE MI
       </h2>

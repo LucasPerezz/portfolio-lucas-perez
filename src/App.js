@@ -3,7 +3,6 @@ import "./App.css";
 import Data from "./Components/context/Data.js";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import ProyectDetailContainer from "./Components/ProyectDetailContainer/ProyectDetailContainer";
 import Home from "./view/Home";
 
 function App() {
@@ -13,7 +12,6 @@ function App() {
         <Router>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/:name" element={<ProyectDetailContainer />} />
           </Routes>
         </Router>
       </Data>

@@ -1,10 +1,8 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 const ProyectItem = ({ proyect }) => {
   return (
-    <div className="w-4/5 mx-auto sm:w-full shadow-lg hover:transition-all hover:bg-slate-100 p-10 rounded-3xl">
-      <Link to={`/${proyect.name}`}>
+    <div className="w-4/5 mx-auto sm:w-full shadow-lg hover:transition-all hover:bg-slate-100 p-10 rounded-3xl hover:scale-105 hover:duration-500 hover:z-10 relative">
         <div className="w-full">
           <img src={proyect.image} alt="" className="w-full" />
         </div>
@@ -22,7 +20,14 @@ const ProyectItem = ({ proyect }) => {
             })}
           </div>
         </div>
-      </Link>
+      <div className="flex justify-center gap-4 lg:gap-12 mt-10">
+          <button className="border-2 px-6 sm:py-1 rounded-lg border-slate-500 hover:bg-slate-700 hover:text-white hover:border-slate-700 text-sm sm:text-lg lg:text-lg shadow">
+            <a href={proyect.github}>Github</a>
+          </button>
+          <button className="border-2 px-6 sm:py-1 rounded-lg border-slate-500 hover:bg-slate-700 hover:text-white hover:border-slate-700 text-sm sm:text-lg lg:text-lg shadow">
+            <a href={proyect.demo}>Demo</a>
+          </button>
+        </div>
     </div>
   );
 };

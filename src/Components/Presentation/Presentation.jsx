@@ -20,7 +20,7 @@ const Presentation = () => {
         <img
           src={PRESENTATION_IMAGE}
           alt="portfolio"
-          className="w-full max-w-3xl mx-auto"
+          className="w-full max-w-3xl mx-auto hover:scale-110 hover:duration-1000"
         />
       </div>
     </div>

@@ -7,11 +7,11 @@ const Proyects = () => {
   const { proyectsData } = useContext(useData);
 
   return (
-    <div className="w-full min-h-screen max-h-max" id="recentProyects">
+    <div className="w-full min-h-screen max-h-max hover:scale-110 hover:duration-1000" id="recentProyects">
       <h2 className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24">
         PROYECTOS RECIENTES
       </h2>
-      <div className="w-full sm:w-3/4 mx-auto mt-20 flex flex-col sm:grid sm:grid-cols-1 sm:place-items-center lg:grid-cols-2 lg:place-items-center gap-5 mb-32">
+      <div className="w-full sm:w-3/4 mx-auto mt-20 flex flex-col sm:grid sm:grid-cols-1 sm:place-items-center lg:grid-cols-2 lg:place-items-center gap-5 mb-48">
         {proyectsData.map((proyect) => {
           return <ProyectItem proyect={proyect} key={proyect.id} />;
         })}
