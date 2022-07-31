@@ -9,19 +9,19 @@ const Skills = () => {
   return (
     <>
     <h2 className='text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl'>SKILLS</h2>
-    <div className='w-4/5 h-max m-auto max-w-4xl overflow-x-scroll snap-proximity snap-center my-24 list-container'>
-        <div className='flex w-full gap-12 mb-7'>
+
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 mx-auto gap-12 min-h-screen mt-24'>
             {
                 languageData.map((language) => {
                     return (
-                        
+                        <div className='w-max h-max p-2 hover:shadow-md rounded-xl'>
                         <img src={language.image} alt="" className='w-20 h-20 sm:w-32 sm:h-32 lg:w-40 lg:h-40 object-contain'/>
+                        </div>
                        
                     )
                 })
             }
         </div>
-    </div>
     </>
   )
 }

@@ -6,7 +6,7 @@ const AboutMe = () => {
 
 
   return (
-    <div className='w-4/5 max-w-4xl mx-auto min-h-screen py-24'>
+    <div className='w-3/4 max-w-6xl mx-auto min-h-screen py-24'>
         <h2 className='text-center text-lg sm:text-xl font-bold text-emerald-400'>SOBRE MI</h2>
         <div className='w-full flex flex-col sm:grid sm:grid-cols-2 sm:place-items-center sm:gap-7 mt-16'>
             <img src={ME} alt="" />
