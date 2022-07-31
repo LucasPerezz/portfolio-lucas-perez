@@ -11,9 +11,9 @@ const Proyects = () => {
   
 
   return (
-    <div className='w-full min-h-screen'>
+    <div className='w-full min-h-screen max-h-max' id='recentProyects'>
     <h2 className='text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24'>PROYECTOS RECIENTES</h2>
-    <div className='w-full sm:w-3/4 mx-auto mt-20 flex flex-col sm:grid sm:grid-cols-1 sm:place-items-center lg:grid-cols-2 lg:place-items-center gap-5'>
+    <div className='w-full sm:w-3/4 mx-auto mt-20 flex flex-col sm:grid sm:grid-cols-1 sm:place-items-center lg:grid-cols-2 lg:place-items-center gap-5 mb-32'>
         {
           proyectsData.map((proyect) => {
             return <ProyectItem proyect={proyect} key={proyect.id} />
