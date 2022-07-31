@@ -2,7 +2,7 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="h-16 w-full bg-white shadow rounded-t-2xl mt-6 bottom-0 flex items-center fixed">
+    <div className="h-16 w-full bg-white shadow rounded-t-2xl mt-6 bottom-0 flex items-center fixed z-50">
       <ul className="w-full flex justify-evenly items-center">
         <li>
           <a href="#presentation">

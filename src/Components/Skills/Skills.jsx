@@ -6,7 +6,7 @@ const Skills = () => {
   const { languageData } = useContext(useData);
 
   return (
-    <div className="min-h-screen hover:scale-110 hover:duration-1000">
+    <div className="min-h-screen">
       <h2
         className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24 "
         id="skills"
@@ -17,7 +17,7 @@ const Skills = () => {
       <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 place-items-center mx-auto gap-12 mt-20 ">
         {languageData.map((language) => {
           return (
-            <div className="w-max h-max p-2 hover:shadow-md rounded-xl">
+            <div className="w-max h-max p-2 hover:shadow-md rounded-xl hover:scale-105 hover:duration-500">
               <img
                 src={language.image}
                 alt=""

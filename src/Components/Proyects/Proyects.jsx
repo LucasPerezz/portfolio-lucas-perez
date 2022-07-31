@@ -7,7 +7,7 @@ const Proyects = () => {
   const { proyectsData } = useContext(useData);
 
   return (
-    <div className="w-full min-h-screen max-h-max hover:scale-110 hover:duration-1000" id="recentProyects">
+    <div className="w-full min-h-screen max-h-max" id="recentProyects">
       <h2 className="text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl mt-24">
         PROYECTOS RECIENTES
       </h2>
