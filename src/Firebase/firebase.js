@@ -11,12 +11,10 @@ const firebaseConfig = {
   projectId: "portfolio-lucas-perez",
   storageBucket: "portfolio-lucas-perez.appspot.com",
   messagingSenderId: "604580821248",
-  appId: "1:604580821248:web:b470dbd638c65d2c995be5"
+  appId: "1:604580821248:web:b470dbd638c65d2c995be5",
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-export const db = getFirestore(app)
-
-
+export const db = getFirestore(app);
