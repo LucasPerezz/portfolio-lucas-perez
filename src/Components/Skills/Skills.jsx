@@ -10,7 +10,7 @@ const Skills = () => {
     <>
     <h2 className='text-center text-emerald-400 font-bold text-lg sm:text-xl lg:text-2xl'>SKILLS</h2>
 
-        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 mx-auto gap-12 min-h-screen mt-24'>
+        <div className='grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 w-3/4 place-items-center mx-auto gap-12 min-h-screen mt-24'>
             {
                 languageData.map((language) => {
                     return (
